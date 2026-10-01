@@ -41,8 +41,12 @@
     transition: color 0.2s ease;
 }
 
-.navbar-links a:hover {
-    color: var(--accent-color);
+/* Hover effects */
+
+@media (hover: hover) and (pointer: fine) {
+    .navbar-links a:hover {
+        color: var(--accent-color);
+    }
 }
 
 @media (max-width: 600px) {

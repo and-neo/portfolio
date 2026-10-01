@@ -138,22 +138,14 @@
 
     transition:
         background-color 0.2s ease,
+        border-color 0.2s ease,
         color 0.2s ease,
         transform 0.2s ease;
-}
-
-.project-link:hover {
-    transform: translateY(-2px);
 }
 
 .project-link-primary {
     color: var(--background-color);
     background-color: var(--text-color);
-}
-
-.project-link-primary:hover {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
 }
 
 .project-link-secondary {
@@ -162,14 +154,27 @@
     border-color: var(--text-color);
 }
 
-.project-link-secondary:hover {
-    color: var(--background-color);
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
 .project-link span {
     color: inherit;
+}
+
+/* Hover effects */
+
+@media (hover: hover) and (pointer: fine) {
+    .project-link:hover {
+        transform: translateY(-2px);
+    }
+
+    .project-link-primary:hover {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+    }
+
+    .project-link-secondary:hover {
+        color: var(--background-color);
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
 }
 
 /* Design & Experience */

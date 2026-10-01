@@ -86,11 +86,6 @@
         border-color 0.2s ease;
 }
 
-.contact-email:hover {
-    color: var(--accent-soft);
-    border-color: var(--highlight-color);
-}
-
 /* Social links */
 
 .contact-links {
@@ -117,10 +112,18 @@
         padding-left 0.2s ease;
 }
 
-.contact-links a:hover {
-    padding-left: 0.5rem;
+/* Hover effects */
 
-    color: var(--accent-soft);
+@media (hover: hover) and (pointer: fine) {
+    .contact-email:hover {
+        color: var(--accent-soft);
+        border-color: var(--highlight-color);
+    }
+
+    .contact-links a:hover {
+        padding-left: 0.5rem;
+        color: var(--accent-soft);
+    }
 }
 
 /* Responsive */
