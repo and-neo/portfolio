@@ -15,16 +15,6 @@
     gap: 5rem;
 }
 
-.hero-eyebrow {
-    margin: 0 0 1.5rem;
-
-    color: var(--text-secondary);
-
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-}
-
 .hero-title {
     max-width: 850px;
     margin: 0;
@@ -53,7 +43,7 @@
     align-items: center;
     gap: 1rem;
 
-    margin-top: 2.5rem;
+    margin-top: 1.25rem;
 }
 
 .button {
@@ -186,30 +176,26 @@
     background-color: var(--olive-color);
 }
 
-.hero-actions {
-    margin-top: 1.25rem;
-}
-
 @media (max-width: 800px) {
     .hero {
         min-height: auto;
-        padding: 5rem 0 6rem;
+        padding: 3.5rem 0 4rem;
     }
 
     .hero-container {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 2.5rem;
     }
 
     .hero-decoration {
-        width: min(70%, 300px);
+        width: min(65%, 260px);
         justify-self: center;
     }
 }
 
 @media (max-width: 600px) {
     .hero {
-        padding-top: 4rem;
+        padding: 2.5rem 0 3.5rem;
     }
 
     .hero-title {
@@ -228,5 +214,9 @@
 
     .button {
         width: 100%;
+    }
+
+    .hero-decoration {
+        width: min(60%, 230px);
     }
 }
