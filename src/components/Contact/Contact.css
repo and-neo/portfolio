@@ -1,0 +1,156 @@
+.contact-section {
+    color: var(--background-color);
+    background-color: var(--text-color);
+}
+
+.contact-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    margin-bottom: 6rem;
+}
+
+.contact-number {
+    color: var(--highlight-color);
+
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -0.06em;
+}
+
+.contact-label {
+    margin: 0 0 0.5rem;
+
+    color: var(--accent-soft);
+
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+.contact-header h2 {
+    max-width: 900px;
+    margin: 0;
+
+    color: var(--background-color);
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1;
+    letter-spacing: -0.055em;
+}
+
+/* Contact content */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 7rem;
+    align-items: end;
+}
+
+.contact-intro {
+    max-width: 680px;
+}
+
+.contact-intro > p {
+    max-width: 580px;
+    margin: 0 0 2.5rem;
+
+    color: var(--olive-soft);
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+/* Email */
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding-bottom: 0.4rem;
+
+    border-bottom: 2px solid var(--accent-color);
+
+    color: var(--background-color);
+
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.contact-email:hover {
+    color: var(--accent-soft);
+    border-color: var(--highlight-color);
+}
+
+/* Social links */
+
+.contact-links {
+    border-top: 1px solid rgba(247, 245, 239, 0.2);
+}
+
+.contact-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.25rem 0;
+
+    border-bottom: 1px solid rgba(247, 245, 239, 0.2);
+
+    color: var(--background-color);
+
+    font-size: 1rem;
+    font-weight: 650;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+.contact-links a:hover {
+    padding-left: 0.5rem;
+
+    color: var(--accent-soft);
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+    .contact-header {
+        margin-bottom: 4rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-header {
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact-number {
+        font-size: 3rem;
+    }
+
+    .contact-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .contact-email {
+        font-size: 1.15rem;
+    }
+}
