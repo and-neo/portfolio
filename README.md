@@ -16,4 +16,4 @@ A full-stack movie and TV discovery platform built with React, Node, Express and
 
 ## Live Portfolio
 
-Coming soon.
+https://andreas-neofytou.vercel.app/
