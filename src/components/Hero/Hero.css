@@ -195,7 +195,23 @@
 
 @media (max-width: 600px) {
     .hero {
-        padding: 2.5rem 0 3.5rem;
+        display: block;
+
+        min-height: 0;
+        height: auto;
+
+        padding: 2.5rem 0 3rem;
+    }
+
+    .hero-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-decoration {
+        width: min(60%, 230px);
+        justify-self: center;
     }
 
     .hero-title {
@@ -214,9 +230,5 @@
 
     .button {
         width: 100%;
-    }
-
-    .hero-decoration {
-        width: min(60%, 230px);
     }
 }
